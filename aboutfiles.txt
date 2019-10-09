@@ -1,0 +1,3 @@
+JSWork - you will have everything in this JavaScript file, studied from sololearn tutorial and made every 
+	 possible elements and functions
+ 
