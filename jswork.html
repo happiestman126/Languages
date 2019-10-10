@@ -7,20 +7,76 @@
 		<script type="text/javascript"> // type and language are the two attributes for the script tag
 			var x = 100;
 			var y = 101;
+			var z = 3;
 			var isAdult = (y < 18) ? "Too Young" : "Old Enough";
 			var sayHello = 'Hello World! \n I am a JavaScript Programmer, Lets do some Math.\n';
 			document.write(sayHello)
 			document.write("<h4>x : </h4>" + x + "<br>"); 
 			document.write("<h4>Sum of x and y :</h4>" + (x+y) + "<br>" + "<br>"); 
 			document.write ("<h4>Result : </h4>" + (x == y) + "<br>" + "<br>");
-			document.write("<h4>y is </h4>" + isAdult)
-			alert("Click OK to see output");			
+			document.write("<h4>y is </h4>" + isAdult + "<br>" + "<br>")
+	
+			if (x == 100){
+				alert("Click OK to see output");
+			}
+			else if (x == 101){
+				alert("Nothing will appear");
+			}
+			else{
+				alert("Nothing will appear");
+			} 
+			
+			switch (z) {
+				case 1:
+				document.write(z+10 + "<br>" + "<br>");
+				break;
+				
+				case 2:
+				document.write(z+100 + "<br>" + "<br>");
+				break;
+				
+				case 3:
+				document.write(z+1000 + "<br>" + "<br>");
+				break;
+				
+				default:
+				document.write(z);
+			}
+			
+			for (i=0;i<=10;i++){
+				if(i == 5){
+					break;
+				}
+				document.write(i + "<br>" + "<hr>");
+			}
+			
+			for (i=0;i<=10;i++){
+				if(i == 5){
+					continue;
+				}
+				document.write(i + "<br>" + "<hr>");
+			}
+			
+			while(z<=10){
+				document.write(z + "<br>"  + "<br>");
+				z++;
+			}
+
+			/*do{
+				document.write(z + "<br />");
+				z++;
+			}
+			while(z<=5);*/
+
 		</script>
 	</body>
 </html>
 
 <!-- JavaScript variables hold many data types such as numbers, strings, arrays and more,  
      JavaScript numbers are always stored as double precision floating point numbers,
-	 JavaScript Boolean, you can have one of two values, either True and False-->
+	 JavaScript Boolean, you can have one of two values, either True and False,
+	 In 'if' condition there is also another way to do this check using the ? operator: a>b?alert(a):alert(b),
+	 When you need to test for multiple conditions, writing if else statements for each condition might not be the best solution, so the switch statement
+	 is used to perform different actions based on different conditions-->
 	 
 	 
